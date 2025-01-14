@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etDegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Degree" />
+
+    <EditText
+        android:id="@+id/etInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Institution" />
+
+    <EditText
+        android:id="@+id/etStartYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Year" />
+
+    <EditText
+        android:id="@+id/etEndYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Year" />
+
+    <RecyclerView
+        android:id="@+id/rvEducation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnAddEducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Education" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+</LinearLayout>
