@@ -39,7 +39,15 @@
         <Button
             android:id="@+id/btnSavePersonalInfo"
             android:layout_width="match_parent"
+            android:backgroundTint="@color/primary"
             android:layout_height="wrap_content"
             android:text="Save" />
+
+        <Button
+            android:id="@+id/btnGoToEducation"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/primary"
+            android:layout_height="wrap_content"
+            android:text="Go to Education Info" />
     </LinearLayout>
 </ScrollView>

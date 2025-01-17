@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:hint="End Year" />
 
-    <RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvEducation"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -40,10 +40,12 @@
         android:id="@+id/btnAddEducation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
         android:text="Add Education" />
 
     <Button
         android:id="@+id/btnNext"
+        android:backgroundTint="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next" />

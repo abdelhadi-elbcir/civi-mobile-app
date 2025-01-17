@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -67,8 +68,11 @@ public class EducationFragment extends Fragment {
         });
 
         btnNext.setOnClickListener(v -> {
-            // Implement navigation or data passing to the next fragment
-            Toast.makeText(getContext(), "Next clicked", Toast.LENGTH_SHORT).show();
+            Fragment expFragment = new ExperienceFragment(); // Replace with your fragment class
+            FragmentTransaction transaction = requireFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragmentContainer, expFragment); // Ensure your container ID is correct
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
 
         return view;

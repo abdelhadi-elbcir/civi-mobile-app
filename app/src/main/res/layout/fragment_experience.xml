@@ -4,16 +4,54 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <RecyclerView
-        android:id="@+id/rvExperience"
+    <EditText
+        android:id="@+id/etJobTitle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:hint="Job Title" />
+
+    <EditText
+        android:id="@+id/etCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name" />
+
+    <EditText
+        android:id="@+id/etStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Date" />
+
+    <EditText
+        android:id="@+id/etEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Date" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
 
     <Button
         android:id="@+id/btnAddExperience"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/primary"
         android:layout_height="wrap_content"
         android:text="Add Experience" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:backgroundTint="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExperience"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
